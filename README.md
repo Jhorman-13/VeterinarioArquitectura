@@ -1,16 +1,26 @@
-<img src="https://github.com/nuriadevs/Intelipet/blob/main/src/main/resources/img/logo_intelipet.png" width="100" height="100" alt="logo">
+# Sistema de Gestión para Veterinaria Canina 
 
-# Intelipet 
-## :bulb: Antes de comenzar
-**Intelipet** es el proyecto final del ciclo superior de Desarrollo de Aplicaciones Multiplataformas.
+Software de escritorio diseñado para gestionar de manera centralizada y eficiente los procesos de una veterinaria canina. Permite a los empleados y administradores registrar y consultar información vital de las mascotas (salud, alergias, cuidados), administrar los datos de contacto de los dueños, y llevar un control estructurado de las citas y facturación, todo a través de una interfaz gráfica intuitiva.
 
-Este software de escritorio para realizar la gestión de centros veterinarios, permite a los administradores manejar de manera efectiva la información de sus trabajadores,clientes y mascotas, así como llevar un registro actualizado de citas veterinarias y su facturación.
 ## Principales características 
 Las principales características del software son:
 * Conexión a la base de datos a través de usuario y contraseña.
 * La capacidad de consultar,crear,modificar, actualizar y eliminar los registros de de las base de datos.
 * Impresión de informes.
-* Diseño minimalista enfocado para que la experiencia de usuario sea fácil e intuitiva. 
+* Diseño minimalista enfocado para que la experiencia de usuario sea fácil e intuitiva.
+
+* Pasos Básicos para Ejecutar
+Clonar el repositorio: Descarga el código fuente en tu equipo local.
+
+Configurar la Base de Datos:
+
+Abre tu gestor de MySQL (ej. phpMyAdmin o MySQL Workbench).
+
+Ejecuta el script SQL proporcionado en la carpeta /database para crear las tablas (Dueno, Mascota, Cita, etc.).
+
+Configurar credenciales: Modifica la clase de conexión o el archivo properties con tu usuario y contraseña local de MySQL.
+
+Compilar e Iniciar: Abre el proyecto en tu IDE (NetBeans, IntelliJ o Eclipse), actualiza las dependencias de Maven y ejecuta la clase principal (Main.java o App.java).
 
 ## Tecnologías utilizadas
 * Java
@@ -29,6 +39,15 @@ Las principales características del software son:
 
 ## Diagrama UML de la base de datos
 <img src="https://github.com/nuriadevs/Intelipet/blob/main/src/main/resources/img/diagrama.png" width="500" height="300" alt="Diagrama UML de la base de datos">
+
+## Arquitectura del Sistema (Modelo C4)
+C1 - Contexto: Muestra la interacción entre los Empleados/Administradora, el Dueño de la Mascota y el Sistema de Peluquería Canina, apoyado por un servicio de correo externo (SMTP).
+
+C2 - Contenedores: Detalla la separación entre el Frontend (Vista), el Servidor Backend (Controladores/Lógica) y la Base de Datos (Modelo).
+
+C3 - Componentes: Ilustra la relación interna del Backend (Controlador de Seguridad, Citas, Mascotas, Servicio de Reglas y la Capa DAO).
+
+C4 - Clases: Diagrama UML que estructura las entidades principales (Dueno, Mascota, Cita) y los patrones de diseño (Singleton y State).
 
 ## Vista de la aplicación
 #### Inicio
