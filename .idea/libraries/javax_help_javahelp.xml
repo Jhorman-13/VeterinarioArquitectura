@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="javax.help.javahelp" type="repository">
+    <properties maven-id="javax.help:javahelp:2.0.05" />
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/javax/help/javahelp/2.0.05/javahelp-2.0.05.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
